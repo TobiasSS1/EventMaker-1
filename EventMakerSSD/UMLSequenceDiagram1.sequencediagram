@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="5820d6cc-cf18-4e31-aa40-05bf4feda640" name="Sequence1" linkedPackageId="62a9a218-adcc-4ab2-b620-6dbe573a3d6b" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="1c0c6e15-d3bd-4a6e-be31-07deaf956e60">
+      <profileInstance Id="00923418-4089-485b-885e-fe39a1124ea9" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="08234cd1-7423-4016-a943-22617f6ec7bf">
+      <profileInstance Id="f5eb39ac-2038-45ff-9fc3-52f686b46735" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <interaction Id="44abf1fc-42a8-4fc5-9b94-4a9384487d2f" name="Sequence1" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
+        <elementDefinition Id="001ca17e-71e6-4618-b78d-85d7ad0a0237" />
+        <lifelines>
+          <lifeline Id="cbf64def-25be-4a25-b4d9-c6d4470cd195" name="Administration" isActor="false" lifelineDisplayName="Administration">
+            <elementDefinition Id="a0a0b93b-e4b6-42fd-8a56-1cfe3cac8f4b" />
+          </lifeline>
+          <lifeline Id="b0943487-6e78-48f7-b047-bfc8332d45cb" name=": ViewModel" isActor="false" lifelineDisplayName=": ViewModel">
+            <elementDefinition Id="7a03199e-728f-44b0-8324-dcbabe874e67" />
+          </lifeline>
+          <lifeline Id="760905b0-3a5b-492f-8907-979b8345a86a" name=": Events" isActor="false" lifelineDisplayName=": Events">
+            <elementDefinition Id="553eb6f5-dad7-44c3-97d2-676539bb307c" />
+          </lifeline>
+        </lifelines>
+      </interaction>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="62a9a218-adcc-4ab2-b620-6dbe573a3d6b" name="EventMakerSSD">
+    <elementDefinition Id="ac9014d0-aa14-4666-8a50-c568070cc5bd" />
+  </package>
+</SequenceDesignerModel>
