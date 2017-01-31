@@ -14,10 +14,7 @@ namespace EventMaker.Model
         public string Place { get; set; }
         public DateTime DateTime { get; set; }
 
-        public Event()
-        {
-            
-        }
+     
 
         public override string ToString()
         {
