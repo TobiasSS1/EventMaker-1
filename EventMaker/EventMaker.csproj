@@ -95,6 +95,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Converter\DateTimeConverter.cs" />
     <Compile Include="View\CreateEventsPage.xaml.cs">
       <DependentUpon>CreateEventsPage.xaml</DependentUpon>
     </Compile>
@@ -130,7 +131,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Common\" />
-    <Folder Include="Converter\" />
     <Folder Include="Handler\" />
     <Folder Include="Persistency\" />
   </ItemGroup>
