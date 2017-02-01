@@ -13,7 +13,16 @@
         <Grid.DataContext>
             <ViewModel:EventViewModel/>
         </Grid.DataContext>
-        <ListView x:Name="listView" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="92,91,0,0" ItemsSource="{Binding Singleton.Events}"/>
+        <ListView x:Name="listView" HorizontalAlignment="Left" Height="170" VerticalAlignment="Top" Width="170" Margin="53,95,0,0" ItemsSource="{Binding Singleton.Events}">
+            <!--<ListView.ItemTemplate>
+                <DataTemplate>
+                    <Border Name="Border" BorderBrush="Blue" BorderThickness="1" Padding="7" Margin="3">
+                        <TextBlock Grid.Row="0" Grid.Column="0" Text="Event:"/>
+                        <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding Path= Name}"/>
+                    </Border>
+                </DataTemplate>
+            </ListView.ItemTemplate>-->
+        </ListView>
 
     </Grid>
 
