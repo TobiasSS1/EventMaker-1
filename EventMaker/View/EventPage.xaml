@@ -5,6 +5,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:ViewModel="using:EventMaker.ViewModel"
+    xmlns:Interactivity="using:Microsoft.Xaml.Interactivity" xmlns:Core="using:Microsoft.Xaml.Interactions.Core"
     x:Class="EventMaker.EventPage"
     mc:Ignorable="d">
 
@@ -23,6 +24,13 @@
                 </DataTemplate>
             </ListView.ItemTemplate>-->
         </ListView>
+        <Button x:Name="button" Content="Create Event" HorizontalAlignment="Left" Margin="53,285,0,0" VerticalAlignment="Top" Click="button_Click">
+            <Interactivity:Interaction.Behaviors>
+                <Core:EventTriggerBehavior EventName="Click">
+                    <Core:NavigateToPageAction TargetPage="EventMaker.View.CreateEventsPage"/>
+                </Core:EventTriggerBehavior>
+            </Interactivity:Interaction.Behaviors>
+        </Button>
 
     </Grid>
 

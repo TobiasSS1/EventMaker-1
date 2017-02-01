@@ -5,6 +5,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:ViewModel="using:EventMaker.ViewModel"
+    xmlns:Interactivity="using:Microsoft.Xaml.Interactivity" xmlns:Core="using:Microsoft.Xaml.Interactions.Core"
     x:Class="EventMaker.View.CreateEventsPage"
     mc:Ignorable="d">
 
@@ -20,7 +21,13 @@
         <DatePicker HorizontalAlignment="Left" Margin="0,173,0,0" VerticalAlignment="Top" Date="{Binding Date}"/>
         <TimePicker HorizontalAlignment="Left" Margin="10,210,0,0" VerticalAlignment="Top" Width="78" Time="{Binding Time}" ClockIdentifier="24HourClock"/>
         <Button x:Name="button" HorizontalAlignment="Left" Margin="492,173,0,0" VerticalAlignment="Top" Content="Add" Command="{Binding CreateEventCommand}"/>
-        <Button x:Name="button1" Content="Cancel" HorizontalAlignment="Left" Margin="492,220,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="button1" Content="Back" HorizontalAlignment="Left" Margin="492,220,0,0" VerticalAlignment="Top">
+            <Interactivity:Interaction.Behaviors>
+                <Core:EventTriggerBehavior EventName="Click">
+                    <Core:NavigateToPageAction TargetPage="EventMaker.EventPage"/>
+                </Core:EventTriggerBehavior>
+            </Interactivity:Interaction.Behaviors>
+        </Button>
 
     </Grid>
 </Page>
