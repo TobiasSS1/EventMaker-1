@@ -19,7 +19,7 @@
         <TextBox x:Name="textBox_Copy2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Description, Mode=TwoWay}" VerticalAlignment="Top" Margin="260,86,0,0" RenderTransformOrigin="4.327,1.219"/>
         <DatePicker HorizontalAlignment="Left" Margin="0,173,0,0" VerticalAlignment="Top" Date="{Binding Date}"/>
         <TimePicker HorizontalAlignment="Left" Margin="10,210,0,0" VerticalAlignment="Top" Width="78" Time="{Binding Time}" ClockIdentifier="24HourClock"/>
-        <Button x:Name="button" Content="Add" HorizontalAlignment="Left" Margin="492,173,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="button" HorizontalAlignment="Left" Margin="492,173,0,0" VerticalAlignment="Top" Content="Add" Command="{Binding CreateEventCommand}"/>
         <Button x:Name="button1" Content="Cancel" HorizontalAlignment="Left" Margin="492,220,0,0" VerticalAlignment="Top"/>
 
     </Grid>

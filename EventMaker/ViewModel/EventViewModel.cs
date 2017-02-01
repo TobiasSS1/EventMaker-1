@@ -24,13 +24,15 @@ namespace EventMaker.ViewModel
         public DateTimeOffset Date { get; set; }
         public TimeSpan Time { get; set; }
         public ICommand CreateEventCommand { get; set; }
-
+        public MyEventHandler eh { get; set; }
         public EventViewModel()
         {
+           
             DateTime dt = System.DateTime.Now;
             Date = new DateTimeOffset(dt.Year, dt.Month, dt.Day, 0, 0, 0, 0, new TimeSpan());
             Time = new TimeSpan(dt.Hour, dt.Minute, dt.Second);
-            CreateEventCommand = new Common.RelayCommand(new MyEventHandler().CreateEvent);
+            eh = new MyEventHandler(this);
+            CreateEventCommand = new Common.RelayCommand(eh.CreateEvent);
         }
     }
 }
