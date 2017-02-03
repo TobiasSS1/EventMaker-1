@@ -98,6 +98,7 @@
     <Compile Include="Common\RelayCommand.cs" />
     <Compile Include="Converter\DateTimeConverter.cs" />
     <Compile Include="Handler\MyEventHandler.cs" />
+    <Compile Include="Persistency\PersistencyService.cs" />
     <Compile Include="View\CreateEventsPage.xaml.cs">
       <DependentUpon>CreateEventsPage.xaml</DependentUpon>
     </Compile>
@@ -131,9 +132,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Persistency\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Page Include="View\CreateEventsPage.xaml">
       <SubType>Designer</SubType>
