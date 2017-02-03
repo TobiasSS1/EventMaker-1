@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
 using System.Reflection.Metadata;
 using System.Text;
@@ -14,7 +16,7 @@ using EventMaker.Model;
 namespace EventMaker.ViewModel
 {
     
-     class EventViewModel
+     class EventViewModel : INotifyPropertyChanged
     {
         public EventCatalogSingleton Singleton { get; set; }
         public int Id { get; set; }
@@ -24,7 +26,26 @@ namespace EventMaker.ViewModel
         public DateTimeOffset Date { get; set; }
         public TimeSpan Time { get; set; }
         public ICommand CreateEventCommand { get; set; }
+        public ICommand DeleteEventCommand { get; set; }
         public MyEventHandler eh { get; set; }
+        private Event selectedEvent;
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        
+        protected virtual void OnPropertyChanged( string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        public ObservableCollection<Event> EventObs { get; set; }
+
+        public Event SelectedEvent
+        {
+            get { return selectedEvent; }
+            set { selectedEvent = value; OnPropertyChanged(nameof(SelectedEvent)); }
+        }
+
         public EventViewModel()
         {
            
@@ -33,6 +54,18 @@ namespace EventMaker.ViewModel
             Time = new TimeSpan(dt.Hour, dt.Minute, dt.Second);
             eh = new MyEventHandler(this);
             CreateEventCommand = new Common.RelayCommand(eh.CreateEvent);
+            DeleteEventCommand = new Common.RelayCommand(eh.DeleteEvent, DeleteEventCanExecute);
+            SelectedEvent = new Event();
+            EventObs = new ObservableCollection<Event>();
+            EventObs = EventCatalogSingleton.Instance.Events;
         }
+
+        private bool DeleteEventCanExecute()
+        {
+            return this.EventObs.Count > 0;
+        }
+
+        
+
     }
 }

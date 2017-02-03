@@ -14,7 +14,7 @@
         <Grid.DataContext>
             <ViewModel:EventViewModel/>
         </Grid.DataContext>
-        <ListView x:Name="listView" HorizontalAlignment="Left" Height="170" VerticalAlignment="Top" Width="170" Margin="53,51,0,0" ItemsSource="{Binding Singleton.Events}">
+        <ListView x:Name="listView" HorizontalAlignment="Left" Height="170" VerticalAlignment="Top" Width="170" Margin="53,51,0,0" ItemsSource="{Binding EventObs}" SelectedItem="{Binding SelectedEvent, Mode=TwoWay}" BorderBrush="Black" BorderThickness="1">
             <!--<ListView.ItemTemplate>
                 <DataTemplate>
                     <Border Name="Border" BorderBrush="Blue" BorderThickness="1" Padding="7" Margin="3">
@@ -31,6 +31,7 @@
                 </Core:EventTriggerBehavior>
             </Interactivity:Interaction.Behaviors>
         </Button>
+        <Button x:Name="button1" Content="Delete Event" HorizontalAlignment="Left" Margin="262,285,0,0" VerticalAlignment="Top" Command="{Binding DeleteEventCommand}"/>
 
     </Grid>
 
