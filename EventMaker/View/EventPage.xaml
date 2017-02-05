@@ -14,16 +14,17 @@
         <Grid.DataContext>
             <ViewModel:EventViewModel/>
         </Grid.DataContext>
-        <ListView x:Name="listView" HorizontalAlignment="Left" Height="170" VerticalAlignment="Top" Width="170" Margin="53,51,0,0" ItemsSource="{Binding EventObs}" SelectedItem="{Binding SelectedEvent, Mode=TwoWay}" BorderBrush="Black" BorderThickness="1">
+        <ListView x:Name="listView" HorizontalAlignment="Left" Height="170" VerticalAlignment="Top" Width="170" Margin="53,51,0,0" ItemsSource="{Binding EventObs}" SelectedItem="{Binding SelectedEvent, Mode=TwoWay}">
             <!--<ListView.ItemTemplate>
-                <DataTemplate>
-                    <Border Name="Border" BorderBrush="Blue" BorderThickness="1" Padding="7" Margin="3">
-                        <TextBlock Grid.Row="0" Grid.Column="0" Text="Event:"/>
-                        <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding Path= Name}"/>
-                    </Border>
-                </DataTemplate>
+              <DataTemplate>
+                  <Border Width="2" BorderBrush="Black">
+                      <TextBlock Name="TextBlock">Event</TextBlock>
+                      <TextBlock >{Name}</TextBlock>
+                  </Border>
+              </DataTemplate>
             </ListView.ItemTemplate>-->
         </ListView>
+        
         <Button x:Name="button" Content="Create Event" HorizontalAlignment="Left" Margin="53,285,0,0" VerticalAlignment="Top" Click="button_Click">
             <Interactivity:Interaction.Behaviors>
                 <Core:EventTriggerBehavior EventName="Click">

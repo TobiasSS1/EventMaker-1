@@ -22,6 +22,37 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
+    <Content Include="EventMakerClassDiagram.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="EventMakerClassDiagram.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>EventMakerClassDiagram.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="ModelDefinition\Package_1612.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1613.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1614.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1617.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1625.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1628.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1631.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1634.uml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="UMLSequenceDiagram1.sequencediagram">
       <SubType>Content</SubType>
     </Content>

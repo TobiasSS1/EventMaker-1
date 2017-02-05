@@ -395,6 +395,54 @@
         Id="89ac8062-156a-4b39-aae6-e1826d623ef7"
         name="ExecutionEvent" />
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="7e9cd54b-3ee1-4252-9e09-a820e351c8e1"
+        LastKnownName="ViewModel"
+        LastKnownLocation="Package_1612.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="cd7ee765-6a3d-4612-8e3d-7baab96fe78f"
+        LastKnownName="Handler"
+        LastKnownLocation="Package_1613.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="ea494cea-df35-4fef-9b27-3c917f460da9"
+        LastKnownName="View"
+        LastKnownLocation="Package_1614.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="97254d55-8ebf-43f6-9be9-81e496f16cc2"
+        LastKnownName="Model"
+        LastKnownLocation="Package_1617.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="ec8bb3ae-c936-42d0-9dca-532280fda40e"
+        LastKnownName="Persistency"
+        LastKnownLocation="Package_1625.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="a5b3513d-0b57-4f2c-b86d-60ff1b89e066"
+        LastKnownName="Common"
+        LastKnownLocation="Package_1628.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="cc427432-6917-4710-a24a-914542221dfc"
+        LastKnownName="Converter"
+        LastKnownLocation="Package_1631.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="5e55f3b9-1068-4012-8d4f-a75ce848ee19"
+        LastKnownName=".Net Lib"
+        LastKnownLocation="Package_1634.uml" />
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
+  dslVersion="1.0.0.0"
+  Id="ea494cea-df35-4fef-9b27-3c917f460da9"
+  name="View" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="3110fc9b-338f-4b89-aeb5-4375daa8772c"
+        name="EventPage"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="d9b81bf3-b3af-41a5-8058-225093d774d8">
+            <classMoniker
+              Id="5c1ceaaa-3727-4064-b98f-b53d771c9d9e"
+              LastKnownName="EventViewModel"
+              LastKnownLocation="Package_1612.uml" />
+          </dependency>
+          <dependency
+            Id="6f7c0e00-bfb3-4dc4-a3bf-cf7233d5c877">
+            <classMoniker
+              Id="89137dba-aa4e-47b4-b253-cd33abc6e285"
+              LastKnownName="ObservableCollection"
+              LastKnownLocation="Package_1634.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2d4e3f23-4720-42f1-9a99-e2063b1ed287"
+        name="CreateEventPage"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="ba85b93f-c615-4689-a742-37852af5d94b">
+            <classMoniker
+              Id="5c1ceaaa-3727-4064-b98f-b53d771c9d9e"
+              LastKnownName="EventViewModel"
+              LastKnownLocation="Package_1612.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
